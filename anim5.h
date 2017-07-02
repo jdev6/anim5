@@ -48,6 +48,6 @@ anim5_animation* _anim5_new_animation(ALLEGRO_BITMAP* bitmap, double duration, a
 
 void anim5_destroy_animation(anim5_animation* anim);
 void anim5_advance_timer(anim5_animation* anim, double t);
-void anim5_draw_animation(anim5_animation* anim, double x, double y, int flags);
+void anim5_draw_animation(anim5_animation* anim, float x, float y, int flags);
 
 #endif

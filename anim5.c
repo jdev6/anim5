@@ -47,7 +47,7 @@ void anim5_advance_timer(anim5_animation* anim, double t) {
     }
 }
 
-void anim5_draw_animation(anim5_animation* anim, double x, double y, int flags) {
+void anim5_draw_animation(anim5_animation* anim, float x, float y, int flags) {
     anim5_frame frame = anim->frames[anim->position];
     al_draw_bitmap_region(anim->bitmap, frame.x, frame.y, frame.w, frame.h, x, y, flags);
 }
